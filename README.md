@@ -1,26 +1,29 @@
 # Giris-Cikis-Yansit
 
 
-İlk olarak, bInput ve bOutput adında iki BOOL tipinde değişken tanımlanır. Bu değişkenler, giriş ve çıkış değerlerini tutmak için kullanılır.
+bInput ve bOutput adında iki değişken tanımlanır.
 
-bInput değişkeni, I0.0 adresindeki girişin değerini alır. Bu, dışarıdan bir girişin okunmasını sağlar.
+I0.0 girişindeki değer, bInput değişkenine atanır.
 
-bOutput değişkeni, bInput değişkenine eşitlenir. Yani, bInput değişkenindeki değer bOutput değişkenine aktarılır.
+Eğer bInput doğru (True) ise, yani I0.0 girişinden veri geliyorsa, bOutput değişkenine Q0.0 çıkışının değeri atanır.
 
-Bu kodun amacı, giriş değerini çıkışa yansıtmaktır. Yani, I0.0 adresindeki giriş değeri ne ise, aynı değer Q0.0 adresindeki çıkışa aktarılır.
+Eğer bInput yanlış (False) ise, yani veri gelmiyorsa, bOutput değişkenine Q0.1 çıkışının değeri atanır.
+
+Bu şekilde, bInput girişinden alınan değere bağlı olarak bOutput çıkışı belirlenir.
 
 Bu kod Structured Text ile yazılmıştır. Örnek bir koddur.
 
 # Input-Output-Reflect
 
 
+Two variables, bInput and bOutput, are defined.
 
-First, two variables named bInput and bOutput are defined as BOOL type. These variables are used to store the input and output values.
+The value of I0.0 input is assigned to the bInput variable.
 
-The bInput variable takes the value of the input at address I0.0. This allows reading an external input.
+If bInput is true (True), which means there is data coming from the I0.0 input, the value of Q0.0 output is assigned to the bOutput variable.
 
-The bOutput variable is assigned the value of bInput. In other words, the value in bInput is transferred to the bOutput variable.
+If bInput is false (False), which means there is no data coming, the value of Q0.1 output is assigned to the bOutput variable.
 
-The purpose of this code is to reflect the input value to the output. This means that whatever the input value is at address I0.0, the same value is transferred to the output at address Q0.0.
+In this way, the value of the bOutput output is determined based on the data received from the bInput input.
 
 This code is written in Structured Text, and it serves as an example.
