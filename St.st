@@ -1,4 +1,4 @@
-PROGRAM GirişYansıtÇıkış
+PROGRAM GirisYansıtCıkıs
 VAR
     bInput: BOOL;
     bOutput: BOOL;
